@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Приведи друга на склад — зарабатывай без коробок</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#fbf8f2;--card:#fff;--ink:#1d2330;--mut:#4a5263;--acc:#ffc83d;--grn:#e3f1e8;--line:#e6dfd0}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.55 Manrope,"Segoe UI",Arial,sans-serif}
+.w{max-width:1040px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+h1,h2,h3{line-height:1.2;margin:0 0 12px;font-weight:800}
+h1{font-size:clamp(28px,5vw,44px)}h2{font-size:clamp(23px,3.5vw,32px)}h3{font-size:18px}
+p{margin:0 0 12px;color:var(--mut)}
+.btn{display:inline-block;padding:14px 22px;border-radius:12px;font-weight:800;text-decoration:none;color:var(--ink);background:var(--acc);border:2px solid var(--ink);cursor:pointer;font-family:inherit;font-size:16px;margin:4px 6px 4px 0}
+.btn.alt{background:#fff}
+.btn:hover{transform:translateY(-1px)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
+.g{display:grid;gap:16px}.g3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}.g2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+header{border-bottom:1px solid var(--line);background:#fff}
+header .w{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
+header a{color:var(--ink);font-weight:800;text-decoration:none}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center}
+@media(max-width:760px){.hero{grid-template-columns:1fr}}
+.tag{display:inline-block;background:var(--grn);padding:4px 12px;border-radius:99px;font-size:14px;font-weight:600;margin-bottom:12px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 20px}
+.tab{padding:12px 20px;border-radius:12px;border:2px solid var(--ink);background:#fff;font:800 16px Manrope,sans-serif;color:var(--ink);cursor:pointer}
+.tab[aria-pressed=true]{background:var(--acc)}
+.big{font-size:34px;font-weight:800;color:var(--ink)}
+.num{width:36px;height:36px;border-radius:50%;background:var(--acc);display:grid;place-items:center;font-weight:800;margin-bottom:8px}
+input,select{width:100%;padding:12px;border:1.5px solid #b9b19f;border-radius:10px;font:inherit;color:var(--ink);background:#fff}
+label{display:block;font-weight:600;font-size:15px;margin-bottom:4px}
+.f{margin-bottom:14px}
+input[type=range]{padding:0}
+.chk{display:flex;gap:10px;align-items:flex-start;font-size:15px;color:var(--mut)}.chk input{width:22px;margin-top:3px}
+details{border-bottom:1px solid var(--line);padding:12px 0}summary{font-weight:800;cursor:pointer}
+.tier{border-top:6px solid var(--acc)}
+#out{display:none;white-space:pre-wrap;background:var(--grn);padding:14px;border-radius:12px;margin-top:14px;color:var(--ink)}
+svg{max-width:100%;height:auto}
+button.wc{text-align:left;font:inherit;cursor:pointer;color:var(--ink);width:100%;border:1px solid var(--line)}button.wc:hover{transform:translateY(-2px)}button.wc p{margin:0 0 8px}.more{font-weight:800;text-decoration:underline}
+dialog{border:2px solid var(--ink);border-radius:18px;padding:22px;max-width:560px;width:calc(100% - 28px);background:#fff;color:var(--ink)}dialog::backdrop{background:rgba(29,35,48,.55)}
+dt{font-weight:800;margin-top:10px}dd{margin:0;color:var(--mut)}
+footer{background:#fff;border-top:1px solid var(--line);padding:24px 0;font-size:14px;color:var(--mut)}
+</style>
+</head>
+<body>
+<header><div class="w"><a href="#top">📦 Приведи друга на склад</a><span><a href="tel:+79957347244">+7 995 734‑72‑44</a></span></div></header>
+
+<main id="top">
+<section><div class="w hero">
+<div>
+<span class="tag">Для тех, кто приводит людей</span>
+<h1>Приведи друга — получи <span class="pay">10 000 ₽</span></h1>
+<p>Склады известных компаний ищут сборщиков, комплектовщиков и подсобных рабочих. Расскажи знакомым о вакансии и оформи их через бота — самому работать на складе не нужно.</p>
+<a class="btn" href="#anketa">Заполни анкету</a>
+<a class="btn alt" href="http://t.me/rabota_referal_bot" target="_blank" rel="noopener">Открой бота в Telegram</a>
+<a class="btn alt" href="https://web.max.ru/188946696" target="_blank" rel="noopener">Напиши в Max</a>
+</div>
+<svg viewBox="0 0 320 250" role="img" aria-label="Стеллаж со склада с коробками и монетой">
+<rect width="320" height="250" rx="22" fill="#e3f1e8"/>
+<g stroke="#1d2330" stroke-width="3" fill="none"><path d="M30 60h200M30 130h200M30 200h200M36 40v170M224 40v170"/></g>
+<g stroke="#1d2330" stroke-width="2.5"><rect x="48" y="26" width="52" height="34" fill="#e0b074"/><rect x="108" y="36" width="44" height="24" fill="#f0c98f"/><rect x="60" y="96" width="60" height="34" fill="#f0c98f"/><rect x="130" y="86" width="50" height="44" fill="#e0b074"/><rect x="48" y="166" width="46" height="34" fill="#e0b074"/><rect x="104" y="156" width="64" height="44" fill="#f0c98f"/></g>
+<path d="M74 26v34M82 96v34M154 86v44" stroke="#fff" stroke-width="4" opacity=".7"/>
+<circle cx="262" cy="92" r="40" fill="#ffc83d" stroke="#1d2330" stroke-width="3"/>
+<text x="262" y="106" text-anchor="middle" font-family="Manrope,Arial,sans-serif" font-size="40" font-weight="800" fill="#1d2330">₽</text>
+<rect x="236" y="170" width="70" height="46" rx="8" fill="#fff" stroke="#1d2330" stroke-width="3"/><path d="M248 186h46M248 200h30" stroke="#1d2330" stroke-width="3"/>
+</svg>
+</div></section>
+
+<section style="background:#fff"><div class="w">
+<h2>Выбери регион</h2>
+<p>Выплата зависит от региона, где твой друг выйдет на склад.</p>
+<div class="tabs" role="group" aria-label="Регион">
+<button class="tab" data-r="mo" aria-pressed="true">Московская область</button>
+<button class="tab" data-r="ur" aria-pressed="false">Урал</button>
+</div>
+<div class="g g3">
+<div class="card"><div class="big pay">10 000 ₽</div><p>за 1 друга, вышедшего на 10 смен</p></div>
+<div class="card"><div class="big" id="p5">50 000 ₽</div><p>если привёл 5 человек</p></div>
+<div class="card"><div class="big" id="p10">100 000 ₽</div><p>если привёл 10 человек</p></div>
+</div>
+</div></section>
+
+<section><div class="w">
+<span class="tag">Как это устроено</span>
+<h2>Три шага от знакомства до денег на карте</h2>
+<div class="g g3">
+<div class="card"><div class="num">1</div><h3>Найди человека</h3><p>Друга, соседа, знакомого — любого, кто ищет подработку без опыта и образования. Отправь ему ссылку на бота.</p></div>
+<div class="card"><div class="num">2</div><h3>Помоги выйти на склад</h3><p>Он быстро оформляется и отрабатывает 10 смен сборщиком, комплектовщиком или подсобным рабочим.</p></div>
+<div class="card"><div class="num">3</div><h3>Получи деньги</h3><p>После 10 смен друга <span class="pay">10 000 ₽</span> придут на твою карту. На складе можешь ни разу не появиться.</p></div>
+</div></div></section>
+
+<section style="background:#fff"><div class="w">
+<span class="tag">Сколько можно заработать</span>
+<h2>Посчитай свой доход</h2>
+<div class="card" style="max-width:560px">
+<label for="rng">Сколько друзей приведёшь: <b id="n">5</b></label>
+<input type="range" id="rng" min="1" max="30" value="5" aria-label="Количество друзей">
+<p style="margin-top:14px">Твой доход (базовый):</p><div class="big" id="sum">50 000 ₽</div>
+<p id="sumb"></p>
+</div>
+</div></section>
+
+<section><div class="w">
+<span class="tag">Куда устраиваются друзья</span>
+<h2>Выбери склад рядом с домом: <span id="rn">Московская область</span></h2>
+<div class="g g2">
+<div id="wh" class="g" style="grid-template-columns:1fr 1fr"></div>
+<svg viewBox="0 0 320 220" role="img" aria-label="Погрузчик с паллетой">
+<rect width="320" height="220" rx="22" fill="#fff3d1"/>
+<path d="M0 186h320" stroke="#1d2330" stroke-width="3"/>
+<g stroke="#1d2330" stroke-width="3"><rect x="150" y="96" width="76" height="56" rx="6" fill="#ffc83d"/><path d="M226 150l30 0v-20" fill="none"/><rect x="154" y="64" width="12" height="100" fill="#fff"/><path d="M118 68v100M118 158h-70" fill="none" stroke-width="6"/><rect x="40" y="108" width="40" height="30" fill="#e0b074"/><rect x="82" y="118" width="30" height="20" fill="#f0c98f"/><circle cx="172" cy="170" r="16" fill="#1d2330"/><circle cx="224" cy="170" r="12" fill="#1d2330"/></g>
+<path d="M150 96V60h30" stroke="#1d2330" stroke-width="3" fill="none"/>
+</svg>
+</div>
+<p style="margin-top:16px"><b>Вакансии:</b> сборщик заказов · комплектовщик · подсобный рабочий · грузчик</p>
+</div></section>
+
+<section style="background:#fff"><div class="w">
+<span class="tag">Что получает твой друг</span>
+<h2>Условия, о которых приятно рассказывать</h2>
+<div class="g g3">
+<div class="card"><h3>Комфортная температура</h3><p>Ровный температурный режим — не жарко летом и не холодно зимой.</p></div>
+<div class="card"><h3>Бесплатный развоз</h3><p>Автобусы забирают сотрудников от удобных точек и возвращают после смены.</p></div>
+<div class="card"><h3>Вахта с проживанием</h3><p>Для иногородних — вахта от 15 дней с бесплатным проживанием в хостеле рядом.</p></div>
+<div class="card"><h3>График под себя</h3><p>Выходи от 2 смен в неделю — удобно совмещать с учёбой, семьёй или другой работой.</p></div>
+<div class="card"><h3>Ставка плюс сдельная</h3><p>Гарантированная оплата смены и доплата за выработку.</p></div>
+<div class="card"><h3>Без опыта и резюме</h3><p>Оформление за один день, стаж и образование не нужны.</p></div>
+</div></div></section>
+
+<section><div class="w">
+<span class="tag">Бонусы для постоянных агентов</span>
+<h2>Приводи чаще — получай больше</h2>
+<div class="g g2" style="align-items:center">
+<div class="g g3" style="grid-template-columns:1fr">
+<div class="card tier"><h3>5 друзей за месяц — подарок</h3><p>Фирменный подарок от программы: термокружка или футболка.</p></div>
+<div class="card tier"><h3>10 друзей за месяц — увеличенный бонус</h3><p>Все следующие выплаты растут на 10%.</p></div>
+<div class="card tier"><h3>Каждый месяц — розыгрыш призов</h3><p>Каждый приведённый друг даёт тебе один билет.</p></div>
+</div>
+<svg viewBox="0 0 320 240" role="img" aria-label="Телефон и стопки монет">
+<rect width="320" height="240" rx="22" fill="#e3f1e8"/>
+<rect x="40" y="30" width="96" height="180" rx="14" fill="#fff" stroke="#1d2330" stroke-width="3"/>
+<rect x="54" y="56" width="68" height="28" rx="8" fill="#ffc83d" stroke="#1d2330" stroke-width="2.5"/><rect x="54" y="96" width="50" height="22" rx="8" fill="#f2efe6" stroke="#1d2330" stroke-width="2.5"/><rect x="54" y="130" width="68" height="22" rx="8" fill="#ffc83d" stroke="#1d2330" stroke-width="2.5"/>
+<g fill="#ffc83d" stroke="#1d2330" stroke-width="3"><ellipse cx="210" cy="190" rx="38" ry="12"/><ellipse cx="210" cy="172" rx="38" ry="12"/><ellipse cx="210" cy="154" rx="38" ry="12"/><ellipse cx="270" cy="190" rx="30" ry="10"/><ellipse cx="270" cy="174" rx="30" ry="10"/></g>
+<rect x="190" y="52" width="80" height="60" rx="8" fill="#fff" stroke="#1d2330" stroke-width="3"/><path d="M190 72h80M222 52v-14l16 14" stroke="#1d2330" stroke-width="3" fill="none"/>
+</svg>
+</div>
+<p style="margin-top:14px;font-size:14px">Размер подарков и процентов уточняет менеджер программы.</p>
+</div></section>
+
+<section id="anketa" style="background:#fff"><div class="w" style="max-width:640px">
+<span class="tag">Анкета агента</span>
+<h2>Заполни анкету — мы свяжемся с тобой</h2>
+<form id="frm" novalidate>
+<div class="f"><label for="a1">Твоё имя и фамилия</label><input id="a1" required autocomplete="name"></div>
+<div class="f"><label for="a2">Твой телефон</label><input id="a2" type="tel" required placeholder="+7" autocomplete="tel"></div>
+<div class="f"><label for="a3">Регион</label><select id="a3"><option value="mo">Московская область</option><option value="ur">Урал</option></select></div>
+<div class="f"><label for="a4">Город склада</label><select id="a4"></select></div>
+<div class="f"><label for="a5">Имя друга</label><input id="a5" required></div>
+<div class="f"><label for="a6">Телефон друга</label><input id="a6" type="tel" required placeholder="+7"></div>
+<div class="f"><label for="a7">Кем хочет работать друг</label><select id="a7"><option>Сборщик заказов</option><option>Комплектовщик</option><option>Подсобный рабочий</option><option>Грузчик</option></select></div>
+<div class="f"><label for="a8">Откуда звонить удобнее</label><select id="a8"><option>Telegram</option><option>Max</option><option>Телефон</option></select></div>
+<div class="f chk"><input type="checkbox" id="a9"><label for="a9" style="font-weight:400">Согласен на обработку персональных данных, друг тоже дал согласие, чтобы я передал его контакты</label></div>
+<button class="btn" type="submit">Отправь анкету</button>
+</form>
+<div id="out" role="status"></div>
+<div id="acts" style="display:none;margin-top:10px"><a class="btn" href="http://t.me/rabota_referal_bot" target="_blank" rel="noopener">Открой бота в Telegram</a><a class="btn alt" href="https://web.max.ru/188946696" target="_blank" rel="noopener">Напиши в Max</a></div>
+</div></section>
+
+<section><div class="w" style="max-width:760px">
+<h2>Частые вопросы</h2>
+<details><summary>Мне самому нужно работать на складе?</summary><p>Нет. Доход строится только на людях, которых ты привёл.</p></details>
+<details><summary>Когда приходят деньги?</summary><p><span class="pay">10 000 ₽</span> поступают на карту после того, как друг отработал 10 смен.</p></details>
+<details><summary>Есть ли ограничение на число друзей?</summary><p>Нет верхнего предела — выплата идёт за каждого следующего, а бонусы растут вместе с числом друзей.</p></details>
+<details><summary>Что если друг уйдёт раньше 10 смен?</summary><p>Выплата привязана к отработанным сменам. Приведи следующего кандидата.</p></details>
+<details><summary>На какой склад попадёт друг?</summary><p>Это зависит от города и открытых вакансий — актуальный список уточнит менеджер.</p></details>
+<p style="margin-top:20px"><a class="btn" href="#anketa">Заполни анкету</a><a class="btn alt" href="http://t.me/rabota_referal_bot" target="_blank" rel="noopener">Открой бота в Telegram</a><a class="btn alt" href="tel:+79957347244">Позвони +7 995 734‑72‑44</a><a class="btn alt" href="https://web.max.ru/188946696" target="_blank" rel="noopener">Напиши в Max</a></p>
+</div></section>
+</main>
+<footer><div class="w">Партнёрская программа для агентов, приводящих сотрудников на склады известных компаний. Регистрация и выплаты — через бота t.me/rabota_referal_bot.</div></footer>
+
+<dialog id="vd"><div id="vb"></div>
+<a class="btn" href="http://t.me/rabota_referal_bot" target="_blank" rel="noopener">Открой бота в Telegram</a><a class="btn alt" href="https://web.max.ru/188946696" target="_blank" rel="noopener">Напиши в Max</a><a class="btn alt" href="tel:+79957347244">Позвони</a><button type="button" class="btn alt" id="vc">Закрой</button></dialog>
+<script>
+var R={mo:{n:'Московская область',h:'Московская область',p:10000,c:['Видное','Дмитров','Пушкино','Мытищи','Другой город МО'],w:[
+{t:'Склад в Видном',s:'Склады логистической компании',pay:'4 500–6 500 ₽ за смену',sch:'День или ночь',d:[['Должность','Комплектовщик / сборщик'],['Что делать','Комплектация и сортировка посылок с ТСД, погрузка‑разгрузка со складской техникой'],['Смены','День или ночь — на выбор'],['Питание','Бесплатный обед'],['Проживание','Вахта с бесплатным проживанием'],['Оплата','4 500–6 500 ₽ за смену']]},
+{t:'Склад в Дмитрове',s:'Склады строительных товаров',pay:'от 5 000 ₽ за смену, сдельно',sch:'Любой график или вахта',d:[['Должность','Сборщик'],['Что делать','Сборка заказов с ТСД, обучение предоставляется'],['График','День или ночь на выбор, любой график либо вахта от 15 смен'],['Проживание','Хостел бесплатно'],['Проезд и питание','Проезд до склада и питание бесплатно'],['Оплата','От 5 000 ₽ за смену, сдельно']]},
+{t:'Склад в Пушкинском',s:'Склады электроники',pay:'4 200 ₽ за смену',sch:'День или ночь',d:[['Должность','Грузчик'],['Что делать','Погрузка и разгрузка на приёмке и отгрузке, механическая рохля, паллеты'],['Смены','День и ночь — на выбор'],['Питание и жильё','Питание бесплатно, хостел бесплатно'],['Проезд','Такси до склада за счёт компании'],['Оплата','Ставка 4 200 ₽ за смену']]},
+{t:'Склад в Мытищах',s:'Склады продуктового ритейла',pay:'4 000–8 000 ₽ за смену',sch:'2/2, 5/2 или вахта',d:[['Должность','Сборщик заказов'],['Обучение','За 1 день, опыт не нужен'],['График','2/2, 5/2 или вахта с проживанием в хостеле'],['Питание','Бесплатный обед'],['Проезд','Бесплатный корпоративный транспорт'],['Оплата','Ставка 4 000–8 000 ₽ за смену']]}]},
+ur:{n:'Урал',h:'Урал / Екатеринбург, Первоуральск',p:15000,c:['Екатеринбург','Первоуральск','Другой город Урала'],w:[
+{t:'Склады строительных товаров',s:'Работник склада',st:'background:#3fdc6e;border-color:#1fa84a',pay:'4 235 ₽ за смену',sch:'2/2, 3/3, 5/2',d:[['Что делать','Сборка и размещение товара с ТСД, без сложной физической нагрузки'],['Обучение','1 день, опыт не нужен'],['График','2/2, 3/3, 5/2. День 8:00–20:00 или ночь 20:00–08:00'],['Оплата','Фиксированная ставка 4 235 ₽ за смену'],['Выплаты','Первая выплата на второй неделе, дальше каждый четверг на карту'],['Проезд','Бесплатное корпоративное такси'],['Иногородним','Вахта от 15 дней с проживанием']]},
+{t:'Склады маркетплейса',s:'Работник склада',st:'background:#b48cf2;border-color:#7f4fd1',pay:'до 11 500 ₽ за смену',sch:'От 2 смен в неделю',d:[['Что делать','Приёмка, сборка и раскладка товара с ТСД'],['Обучение','С нуля, опыт не обязателен'],['График','От 2 смен в неделю. 8:00–20:00 или 20:00–08:00 (11 часов, час на обед и перерывы)'],['Оплата','До 11 500 ₽ за смену, премии лучшим сотрудникам'],['Выплаты','Еженедельно, с 3‑й недели'],['Условия','Тёплый склад, спецодежда и обувь, столовая на территории'],['Проезд','Корпоративный транспорт из любого района'],['Иногородним','Вахта от 15 дней с проживанием']]},
+{t:'Логистические центры',s:'Сотрудник склада',st:'background:#e0202f;border-color:#e0202f;box-shadow:inset 0 0 0 4px #fff;color:#fff',tc:'#fff',pay:'3 256 ₽ за смену',sch:'2/2 или 5/2',d:[['Что делать','Сбор картона и плёнки, переработка и сортировка товара'],['График','2/2 или 5/2, смены с 8:00 до 20:00'],['Оплата','Фиксированная ставка 3 256 ₽ за смену'],['Выплаты','Еженедельно: первая на 2‑й неделе, дальше по четвергам'],['Бонусы','Премии лучшим сотрудникам, дополнительные смены от 500 до 1 500 ₽'],['Проезд','Бесплатный корпоративный развоз'],['Иногородним','Вахта от 15 дней с бесплатным проживанием']]},
+{t:'Распределительные склады',s:'Сборщик · комплектовщик · подсобный рабочий',st:'background:linear-gradient(135deg,#fff 55%,#cdeed4);border:2px solid #4caf6d',pay:'ставку назовёт менеджер',sch:'От 2 смен в неделю',d:[['Должности','Сборщик, комплектовщик, подсобный рабочий'],['Обучение','Оформление за один день, опыт и резюме не нужны'],['График','От 2 смен в неделю'],['Условия','Ровная температура, бесплатный корпоративный развоз'],['Иногородним','Вахта от 15 дней с бесплатным проживанием в хостеле'],['Оплата','Ставку за смену уточни у менеджера']]}]}};
+var cur='mo';
+function f(n){return n.toLocaleString('ru-RU')+' ₽'}
+function $(i){return document.getElementById(i)}
+function calc(){var k=+$('rng').value,p=R[cur].p,b=k>=10?1.1:1,t=k*p;$('n').textContent=k;$('sum').textContent=f(t);
+$('sumb').textContent=b>1?'С бонусом +'+Math.round((b-1)*100)+'% на следующих друзей доход будет выше.':'Приведи 10 друзей за месяц — и включится бонус +10%.'}
+function setR(r){cur=r;var d=R[r];
+document.querySelectorAll('.pay').forEach(function(e){e.textContent=f(d.p)});
+$('p5').textContent=f(d.p*5);$('p10').textContent=f(d.p*10);$('rn').textContent=d.h;
+document.querySelectorAll('.tab').forEach(function(t){t.setAttribute('aria-pressed',t.dataset.r===r)});
+$('wh').innerHTML=d.w.map(function(x,i){var c=x.tc||'';return '<button type="button" class="card wc" data-i="'+i+'" style="'+(x.st||'')+'"><h3>'+x.t+'</h3><p style="color:'+(c||'#4a5263')+'">'+x.s+'</p><p style="color:'+(c||'#1d2330')+';font-weight:600">💰 '+x.pay+'<br>⏰ '+x.sch+'</p><span class="more">Смотри вакансию →</span></button>'}).join('');
+document.querySelectorAll('.wc').forEach(function(b){b.onclick=function(){openV(+b.dataset.i)}});
+$('a3').value=r;$('a4').innerHTML=d.c.map(function(c){return '<option>'+c+'</option>'}).join('');calc()}
+document.querySelectorAll('.tab').forEach(function(t){t.onclick=function(){setR(t.dataset.r)}});
+$('a3').onchange=function(){setR(this.value)};
+$('rng').oninput=calc;
+$('frm').onsubmit=function(e){e.preventDefault();
+var ids=['a1','a2','a5','a6'],ok=ids.every(function(i){return $(i).value.trim()})&&$('a9').checked;
+if(!ok){alert('Заполни имя, телефоны и поставь галочку согласия');return}
+var t='Анкета агента\nАгент: '+$('a1').value+', '+$('a2').value+'\nСвязь: '+$('a8').value+'\nРегион: '+R[cur].n+', '+$('a4').value+'\nДруг: '+$('a5').value+', '+$('a6').value+'\nВакансия: '+$('a7').value;
+$('out').style.display='block';$('out').textContent=t+'\n\nСкопируй анкету и отправь её в боте или в Max.';$('acts').style.display='block';
+try{navigator.clipboard.writeText(t)}catch(x){}};
+function openV(i){var x=R[cur].w[i];
+$('vb').innerHTML='<h2>'+x.t+'</h2><p>'+x.s+'</p><dl>'+x.d.map(function(r){return '<dt>'+r[0]+'</dt><dd>'+r[1]+'</dd>'}).join('')+'</dl><p><b>Хочешь привести друга на эту вакансию?</b> После его 10 смен ты получишь '+f(R[cur].p)+' на карту.</p>';
+$('vd').showModal()}
+$('vc').onclick=function(){$('vd').close()};
+$('vd').onclick=function(e){if(e.target===this)this.close()};
+setR('mo');
+</script>
+</body>
+</html>
